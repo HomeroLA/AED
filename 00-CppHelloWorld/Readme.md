@@ -1,6 +1,2 @@
-#include <iostream>
-using namespace std;
-
-int main(){
-	cout<<"Hola, mundo!"<<endl;
-}
+Programa de reconocimiento de lenguaje c++. 
+Impresión por pantalla de "Hola mundo"
