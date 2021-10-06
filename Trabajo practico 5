@@ -1,0 +1,30 @@
+#include<iostream>
+#include<cassert>
+
+using namespace std;
+int ubicacionEnPunto(int,int);
+
+int ubicacionEnPunto(int x, int y){
+	enum cuadrante{I, II, III, IV
+	};
+	cuadrante numero;
+	if ((x<0) and (y>0)){
+		numero=I;
+	};
+	if ((x>0) and (y>0)){
+		numero=II;
+	};
+	if ((x<0) and (y<0)){
+		numero=III;
+	};
+	if ((x>0) and (y<0)){
+		numero=IV;
+	};
+	return numero;
+}
+
+int main(){
+	cout<<ubicacionEnPunto(1,1)<<endl;
+	
+	
+}/*corre e imprime por pantalla el numero 1 (acorde al valor del enum)
