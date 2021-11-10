@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+#include <array>
+
+
+using namespace std;
+struct Punto{double x;double y;
+};
+int GetCantidadLados();
+Punto GetVertice();
+Punto SetVertice();
+Punto AddVertice();
+
+
+int GetCantidadLados(){
+	int lados;
+	cout<<"Ingrese la cantidad de vertices que tiene el poligono: "<<endl;
+	cin>>lados;
+	return lados;
+}
+
+Punto GetVertice(){
+	Punto p;
+	cout<<"Ingresar coordenada x: "<<endl;
+	cin>>p.x;
+	cout<<"Ingresar coordenada y: "<<endl;
+	cin>>p.y;
+	return p;
+}/* esta funcion arma un punto, que luego es tomado como vertice*/
+
+
+
+Punto AddVertice(){
+	
+	std::array<Punto,1000000> a;
+	
+	Punto vertice=GetVertice();
+	a.at(0).x=vertice.x;
+	a.at(0).y=vertice.y;
+	
+	
+	
+	
+}
+int main(){
+
+	
+
+	
+}
